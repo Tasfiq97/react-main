@@ -1,0 +1,115 @@
+.skills {
+  margin-top: 3rem;
+  background: #251170;
+  height: 80vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .skills {
+    height: 80vh;
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .skills {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills {
+    width: 100%;
+    margin-top: 6rem;
+  }
+}
+
+.skills .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.7rem;
+  color: white;
+  text-align: center;
+}
+
+.skills .title h1 {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.skills .title h1:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -90%;
+  width: 80px;
+  height: 10%;
+  background: #fa06fa;
+}
+
+.skills .skill-part {
+  margin: 2rem 2rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .skills .skill-part {
+    padding: 0rem;
+  }
+}
+
+.skills .skill-part .skill-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skill-part .skill-text {
+  color: white;
+}
+
+.skills .skill-part .skill-progress {
+  width: 30rem;
+  margin-left: 1rem;
+}
+
+.skills .skill-part .skill-progress .progress {
+  height: 0.5rem;
+  position: relative;
+}
+
+.skills .skill-part .skill-progress .progress .inner-progress {
+  border-radius: 30px;
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  height: 100%;
+  background: white;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .skills .skill-part .skill-progress {
+    width: 10rem;
+  }
+}
+/*# sourceMappingURL=skill.css.map */

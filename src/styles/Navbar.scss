@@ -1,0 +1,55 @@
+.sidebar-full {
+  width: 100%;
+}
+.navbar {
+  color: white;
+  font-size: 1.3rem;
+  .logo {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      border-radius: 100%;
+      width: 90%;
+    }
+  }
+  .nav-brand {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+    color: white;
+    .nav-link {
+      li a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+      }
+      .nav-item {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        margin-top: 2rem;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          width: 0px;
+          height: 10%;
+          background: #ec0fec;
+          transition: all 0.4s ease-in-out;
+          transform-origin: left;
+        }
+        &:hover::after {
+          width: 80px;
+        }
+      }
+    }
+  }
+}

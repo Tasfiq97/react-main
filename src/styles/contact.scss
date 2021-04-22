@@ -1,0 +1,147 @@
+.contact-full {
+  width: 100%;
+  background: #251170;
+  .contact-page {
+    .contact-head {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      color: white;
+      margin-top: 3rem;
+      font-size: 3.5rem;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -46%;
+
+        width: 80px;
+        height: 10%;
+        background: #f08cf0;
+      }
+    }
+    p {
+      color: white;
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+    }
+  }
+  .form-full {
+    margin-left: 11rem;
+    @media screen and (max-width: 700px) {
+      margin-left: 0rem;
+    }
+  }
+  .form-map {
+    margin-top: 4rem;
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    width: 100%;
+    grid-gap: 6rem;
+    .form-sec {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 6rem;
+      h3 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -59%;
+
+          width: 80px;
+          height: 10%;
+          background: #ad0aad;
+        }
+      }
+      input {
+        outline: none;
+        border: none;
+        background: none;
+        border-bottom: 2px solid #e2e2e2;
+        color: white;
+        font-size: 1rem;
+        width: 80%;
+        margin-top: 1.9rem;
+        padding: 0.7rem 1rem;
+        transition: all 0.4s ease-in-out;
+        &:focus {
+          border-bottom: 2px solid #c02ec0;
+        }
+      }
+      textarea {
+        margin-top: 1.9rem;
+        padding: 0.7rem 1rem;
+        transition: all 0.4s ease-in-out;
+        outline: none;
+        width: 80%;
+        border: none;
+        background: none;
+        border-bottom: 2px solid #e2e2e2;
+        color: white;
+        font-size: 1rem;
+        &:focus {
+          border-bottom: 2px solid #c02ec0;
+        }
+      }
+      .btn-con {
+        margin-top: 1.8rem;
+        .bt-last {
+          padding: 0.5rem 2.8rem;
+          background: #c02ec0;
+          cursor: pointer;
+          font-size: 1.3rem;
+          color: white;
+          border: none;
+          clip-path: polygon(
+            20% 0%,
+            80% 0%,
+            100% 0,
+            100% 65%,
+            100% 100%,
+            20% 100%,
+            30% 84%,
+            19% 46%
+          );
+          transition: all 0.4s ease-in-out;
+          &:hover {
+            clip-path: polygon(
+              0 0,
+              80% 0%,
+              100% 0,
+              100% 65%,
+              100% 100%,
+              0 99%,
+              0 83%,
+              0 43%
+            );
+          }
+        }
+      }
+    }
+    .map-sec {
+      width: 100%;
+      height: 100%;
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}

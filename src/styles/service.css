@@ -1,0 +1,182 @@
+.service-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
+  padding: 1rem 2rem;
+  height: 100vh;
+  font-size: 0.6rem;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .service-all {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .service-all {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .service-all {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service-all {
+    height: 200vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .service-all {
+    height: 240vh;
+  }
+}
+
+.service-all .serve-head {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .service-all .serve-head {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .service-all .serve-head {
+    margin-bottom: 1rem;
+  }
+}
+
+.service-all .serve-head h2 {
+  margin-left: 8rem;
+  font-size: 1.7rem;
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+
+.service-all .serve-head h2:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -7%;
+  width: 80px;
+  height: 10%;
+  background: #f70df7;
+}
+
+.service-all .serve-head h1 {
+  font-size: 3rem;
+}
+
+.service-all .serve-one {
+  cursor: pointer;
+  margin-top: 1.8rem;
+  padding: 1rem 3rem;
+}
+
+.service-all .serve-one:not(:last-child) {
+  border-right: 3px solid #251170;
+}
+
+@media screen and (max-width: 500px) {
+  .service-all .serve-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service-all .serve-one {
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .service-all .serve-one {
+    padding: 0rem 0.5rem;
+  }
+}
+
+.service-all .serve-one h1 {
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.service-all .serve-one p {
+  margin-top: 0.8rem;
+}
+
+.service-all .serve-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .service-all .serve-progress {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.service-all .icon {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.service-all .icon svg {
+  width: 3rem;
+  height: 3rem;
+  color: #eb83f8;
+}
+
+.service-all .serve-two {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .service-all .serve-two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=service.css.map */

@@ -1,0 +1,106 @@
+.App {
+  width: 100%;
+}
+
+.sidebar {
+  width: 16%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 11;
+  border-right: 2px solid white;
+  overflow: visible;
+}
+
+@media screen and (max-width: 2400px) {
+  .sidebar {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 40%;
+  }
+}
+
+.nav-toggle {
+  position: fixed;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 2400px) {
+  .nav-toggle {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.main-content {
+  width: 100%;
+  top: 0%;
+  margin-left: 0%;
+  height: 100vh;
+  background-color: black;
+}
+
+.nav-btn {
+  position: fixed;
+  z-index: 10;
+  top: 3%;
+  right: 6%;
+  left: 93%;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-btn .line1,
+.nav-btn .line2,
+.nav-btn .line3 {
+  height: 0.4rem;
+  width: 90%;
+  pointer-events: none;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.nav-btn .line1:not(:last-child),
+.nav-btn .line2:not(:last-child),
+.nav-btn .line3:not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-btn {
+    left: 83%;
+  }
+}
+/*# sourceMappingURL=Layout.css.map */

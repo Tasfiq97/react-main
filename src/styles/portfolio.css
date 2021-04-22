@@ -1,0 +1,183 @@
+.portfolio-full {
+  width: 100%;
+  background-color: #251170;
+}
+
+.portfolio-full .portfolio-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+}
+
+.portfolio-full .portfolio-head h1 {
+  margin-top: 3rem;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolio-full .portfolio-head h1 {
+    margin-top: 8rem;
+  }
+}
+
+.portfolio-full .portfolio-head h1:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  width: 80px;
+  height: 10%;
+  background: #030303;
+}
+
+.port-menu .port-main {
+  background-color: black;
+  margin-top: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  padding: 0rem 3rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .port-menu .port-main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .port-menu .port-main {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.port-menu .port-main .portfolios-one {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
+.port-menu .port-main .portfolios-one::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  bottom: 0%;
+  width: 0%;
+  height: 60%;
+  background: #b83cb8;
+  opacity: 0.79;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.port-menu .port-main .portfolios-one:hover::before {
+  width: 70%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.port-menu .port-main .portfolios-one .image-data {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.port-menu .port-main .portfolios-one .image-data:hover .pro-text {
+  visibility: visible;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.port-menu .port-main .portfolios-one .image-data img {
+  width: 100%;
+}
+
+.port-menu .port-main .portfolios-one .image-data .pro-text {
+  color: white;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  visibility: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-size: 2rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  padding: 1rem 1rem;
+}
+
+.buttons {
+  margin-left: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+  .buttons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin-top: 0rem;
+  }
+}
+
+.buttons .btn-cat {
+  font-size: 1rem;
+  margin-top: 4rem;
+  padding: 1rem 1rem;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #251170;
+  position: relative;
+}
+
+.buttons .btn-cat :not(:last-child) {
+  margin-left: 1rem;
+}
+
+.buttons .btn-cat::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 0%;
+  height: 10%;
+  background-color: #9b4e9b;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons .btn-cat:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .buttons .btn-cat {
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */

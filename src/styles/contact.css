@@ -1,0 +1,175 @@
+.contact-full {
+  width: 100%;
+  background: #251170;
+}
+
+.contact-full .contact-page .contact-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contact-full .contact-page h1 {
+  color: white;
+  margin-top: 3rem;
+  font-size: 3.5rem;
+  position: relative;
+}
+
+.contact-full .contact-page h1:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -46%;
+  width: 80px;
+  height: 10%;
+  background: #f08cf0;
+}
+
+.contact-full .contact-page p {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.contact-full .form-full {
+  margin-left: 11rem;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-full .form-full {
+    margin-left: 0rem;
+  }
+}
+
+.contact-full .form-map {
+  margin-top: 4rem;
+  background: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  grid-gap: 6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-full .form-map {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.contact-full .form-map .form-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6rem;
+}
+
+.contact-full .form-map .form-sec h3 {
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.contact-full .form-map .form-sec h3:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -59%;
+  width: 80px;
+  height: 10%;
+  background: #ad0aad;
+}
+
+.contact-full .form-map .form-sec input {
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #e2e2e2;
+  color: white;
+  font-size: 1rem;
+  width: 80%;
+  margin-top: 1.9rem;
+  padding: 0.7rem 1rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact-full .form-map .form-sec input:focus {
+  border-bottom: 2px solid #c02ec0;
+}
+
+.contact-full .form-map .form-sec textarea {
+  margin-top: 1.9rem;
+  padding: 0.7rem 1rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  outline: none;
+  width: 80%;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #e2e2e2;
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-full .form-map .form-sec textarea:focus {
+  border-bottom: 2px solid #c02ec0;
+}
+
+.contact-full .form-map .form-sec .btn-con {
+  margin-top: 1.8rem;
+}
+
+.contact-full .form-map .form-sec .btn-con .bt-last {
+  padding: 0.5rem 2.8rem;
+  background: #c02ec0;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: white;
+  border: none;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 65%, 100% 100%, 20% 100%, 30% 84%, 19% 46%);
+          clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 65%, 100% 100%, 20% 100%, 30% 84%, 19% 46%);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact-full .form-map .form-sec .btn-con .bt-last:hover {
+  -webkit-clip-path: polygon(0 0, 80% 0%, 100% 0, 100% 65%, 100% 100%, 0 99%, 0 83%, 0 43%);
+          clip-path: polygon(0 0, 80% 0%, 100% 0, 100% 65%, 100% 100%, 0 99%, 0 83%, 0 43%);
+}
+
+.contact-full .form-map .map-sec {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-full .form-map .map-sec iframe {
+  width: 100%;
+}
+/*# sourceMappingURL=contact.css.map */

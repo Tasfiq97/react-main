@@ -1,0 +1,109 @@
+.service-all {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  padding: 1rem 2rem;
+  height: 100vh;
+  font-size: 0.6rem;
+  color: white;
+  @media screen and (max-width: 1200px) {
+    height: 100vh;
+  }
+  @media screen and (max-width: 1100px) {
+    height: 120vh;
+  }
+  @media screen and (max-width: 800px) {
+    height: 120vh;
+  }
+  @media screen and (max-width: 500px) {
+    height: 200vh;
+  }
+  @media screen and (max-width: 400px) {
+    height: 240vh;
+  }
+
+  .serve-head {
+    margin-top: 3rem;
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 2rem;
+    }
+    @media screen and (max-width: 700px) {
+      margin-bottom: 1rem;
+    }
+    h2 {
+      margin-left: 8rem;
+      font-size: 1.7rem;
+      position: relative;
+      margin-bottom: 0.6rem;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -7%;
+
+        width: 80px;
+        height: 10%;
+        background: #f70df7;
+      }
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  .serve-one {
+    cursor: pointer;
+    margin-top: 1.8rem;
+    padding: 1rem 3rem;
+    &:not(:last-child) {
+      border-right: 3px solid #251170;
+    }
+    @media screen and (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding: 0rem;
+    }
+    @media screen and (max-width: 700px) {
+      padding: 0rem 0.5rem;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      margin-top: 0.6rem;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+    p {
+      margin-top: 0.8rem;
+    }
+  }
+  .serve-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+  .icon {
+    font-size: 1rem;
+    text-align: center;
+    svg {
+      width: 3rem;
+      height: 3rem;
+      color: #eb83f8;
+    }
+  }
+  .serve-two {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+}
